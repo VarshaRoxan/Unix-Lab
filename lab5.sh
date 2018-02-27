@@ -9,8 +9,9 @@ do
 	fi
 	
 done
-if test $count -eq 2								then
+if test $count -eq 2								
+then
 	echo "It is a prime number"
-else											echo "It is not a prime number"
-fi
-													~   
+else	
+	echo "It is not a prime number"
+fi   
