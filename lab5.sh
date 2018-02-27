@@ -1,3 +1,6 @@
+WAP to check whether the entered number is prime or not.
+
+
 echo "Enter a number"
 read num
 count=0
