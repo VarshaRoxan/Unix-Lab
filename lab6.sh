@@ -135,14 +135,8 @@
 	  v) $mv test test3:
 	       result:
 	       $cat test
-	      cat: test: No such file or directory
 	       $cat test3
 	       kkjmkmf
-
-
-	  vi) $rm test2
-	     result:
-	     cat: test2: No such file or directory
 
 
 
