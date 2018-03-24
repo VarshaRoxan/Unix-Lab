@@ -24,7 +24,7 @@ cs2016a206@user:~$ awk 'NR%2==1' emp.lst
 23293|saksena|manager|accounts|12/02/98|45000
 37480|sai|manager|marketing|18/09/90|90000
 34793|pavan|director|sales|16/09/10|438734
-1001|Adam|Manager|70000|9203451209
+1001|Aemen|Manager|70000|9203451209
 1003|Cathy|Head_staff|50000|9845367130
 1005|Eddy|manager|70000|9206678099
 1007|Gary|Staff|60000|9934560287
@@ -79,7 +79,7 @@ cs2016a206@user:~$ sed -n '5,10p' emp.lst
 
 34793|pavan|director|sales|16/09/10|438734
 emp_id|Name|Designation|Salary|Phone_number
-1001|Adam|Manager|70000|9203451209
+1001|Aemen|Manager|70000|9203451209
 1002|Ben|staff|59000|8892396232
 1003|Cathy|Head_staff|50000|9845367130
 1004|Dom|Director|80000|7856029121
@@ -88,8 +88,8 @@ cs2016a206@user:~$ awk -F "|" 'NR==5,NR==10{print $0}' emp.lst
 
 34793|pavan|director|sales|16/09/10|438734
 emp_id|Name|Designation|Salary|Phone_number
-1001|Adam|Manager|70000|9203451209
-1002|Ben|staff|59000|8892396232
+1001|Aemen|Manager|70000|9203451209
+1002|Boruto|staff|59000|8892396232
 1003|Cathy|Head_staff|50000|9845367130
 ------------------------------------------------------------------------------
 
@@ -97,8 +97,8 @@ emp_id|Name|Designation|Salary|Phone_number
 
 cs2016a206@user:~$ tail +7 emp.lst
 
-1001|Adam|Manager|70000|9203451209
-1002|Ben|staff|59000|8892396232
+1001|Aemen|Manager|70000|9203451209
+1002|Boruto|staff|59000|8892396232
 1003|Cathy|Head_staff|50000|9845367130
 1004|Dom|Director|80000|7856029121
 1005|Eddy|manager|70000|9206678099
@@ -110,8 +110,8 @@ cs2016a206@user:~$ tail +7 emp.lst
 
 cs2016a206@user:~$ awk -F "|" 'NR==7,NR==$NF{print $0}' emp.lst
 
-1001|Adam|Manager|70000|9203451209
-1002|Ben|staff|59000|8892396232
+1001|Aemen|Manager|70000|9203451209
+1002|Boruto|staff|59000|8892396232
 1003|Cathy|Head_staff|50000|9845367130
 1004|Dom|Director|80000|7856029121
 1005|Eddy|manager|70000|9206678099
